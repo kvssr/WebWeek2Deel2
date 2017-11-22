@@ -1,0 +1,11 @@
+@using Week2Deel2.Models;
+@model List<HotelBoeking>
+
+@{
+    ViewData["Title"] = "Overzicht";
+}
+
+<h2>Overzicht</h2>
+@foreach(HotelBoeking h in Model){
+    <div>@h.Voornaam - @h.Achternaam - @h.Datum - <a href="/HotelBoeking/Edit/@h.Id">Edit</a></div>
+    }

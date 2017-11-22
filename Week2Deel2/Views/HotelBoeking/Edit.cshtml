@@ -1,0 +1,15 @@
+@using Week2Deel2.Models
+@model HotelBoeking
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Edit</h2>
+<form name="create" action="/HotelBoeking/Edit" method="post">
+    <div>Voornaam: <input name="Voornaam" type="text" value="@Model.Voornaam"/></div>
+    <div>Achternaam: <input name="Achternaam" type="text" value="@Model.Achternaam"/></div>
+    <div>Aantal Personen: <input name="AantalPersonen" type="number" value="@Model.AantalPersonen" /></div>
+    <div>Datum: <input name="Datum" type="date" value="@Model.Datum"/></div>
+    <div><input type="submit" value="Wijzigen" /></div>
+</form>
